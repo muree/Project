@@ -1,39 +1,106 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>eHA Academy</title>
-    <style>
-      #big-container{
-        border: solid 5px green;
-        width: 500px;
-        height: 600px;
-        margin: 0 auto;
-        border-radius: 20px;
+    <meta charset="utf-8">
+    <title>Murtala Baba</title>
+    <style media="screen">
+
+      table {
+        margin: auto;
+        padding: 60px;
       }
-      #top-container{
-        border-bottom: solid 5px red;
+      #name {
+        text-align: center;
+        font-family: fixed, monospace;
       }
-      .circle{
-        width: 20px;
-        height: 20px;
-        background: Blue;
-        border-radius: 20px;
-        display: inline-block;
-        margin: 7px;
+      #intro, #intrests, #education, #skills {
+        text-align:left;
+        font-size: 1em;
+        font-family:monospace;
+        color: rgb(255,204,153);
+        width:200px;
       }
+      body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      }
+/* solid border */
+hr.solid {
+  border-top: 1px solid #bbb
+}
     </style>
-  <head>
-
-</head>
-<body>
-<div id="big-container">
-  <div id="top-container">
-    <span class="circle"></span>
-    <span class="circle"></span>
-    <span class="circle"></span>
-
-  </div>
-
-</div>
-</body>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="https://live.staticflickr.com/65535/49886683602_eb6f44f9d5_q.jpg" alt="my photo" width="150px">
+</td>
+<td id="name="> <strong>Murtala</strong> Baba</td>
+<td id="address" >Sharada Kano, Nigeria <br>+2348038152413 <br>mureebaba@gmail.com </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="solid">
+    <table>
+      <tbody>
+        <tr>
+          <td id="intro"> <strong>Intro</strong>
+</td>
+<td> I consider myself a web programmer. I design beautiful websites and web applications for clients. <br>I am also a photographer.</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="solid">
+    <table>
+      <tbody>
+        <tr>
+          <td id="intrests"> <strong>Intrests</strong>
+    </td>
+    <td id="area"> Web Design | Programming | Photography </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="solid">
+    <table>
+      <tbody>
+        <tr>
+          <td id="skills"> <strong> Skills</strong>
+    </td>
+    <td> <img src= "https://live.staticflickr.com/65535/49887100647_be1bca8295_o.jpg" width="100" height="150" alt="js logo"> </td>
+    <td> <img src= "https://live.staticflickr.com/65535/49887100437_8eff378dc6_o.jpg" width="100" height="150" alt="css logo"> </td>
+    <td> <img src= "https://live.staticflickr.com/65535/49886362063_3b5c4c91a8_o.jpg" width="100" height="150" alt="js logo"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="solid">
+    <table>
+      <tbody>
+        <tr>
+          <td id="education"> <strong>Education</strong>
+    </td>
+    <td id="area"> <strong>Masters in Bussiness Adminstration </strong><br> <strong>MBA</strong> (Finance) <br>Bayero University, Kano <br><br> <strong>B.Eng(Mechanical) <br>Bayero University, Kano
+    </strong></td>
+    <td style= "text-align:right"> 2015  -  2017 <br><br><br>2005  -  2011</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="solid">
+    <button onclick="myFunction"type="button">Dark Mode</button>
+    <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  </body>
 </html>

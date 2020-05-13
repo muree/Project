@@ -1,207 +1,222 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Murtala Baba</title>
-    <style media="screen">
-      .switch {
-  position: relative;
-  display: inline-block;
-  width: 62px;
-  height: 35px;
-  }
-  .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  }
 
-  .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-  }
+<head>
+  <meta charset="utf-8">
+  <title>Murtala Baba</title>
+  <style media="screen">
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 62px;
+      height: 35px;
+    }
 
-  .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-  }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
 
-  input:checked + .slider {
-  background-color: #2196F3;
-  }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
 
-  input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-  }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
 
-  input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  }
+    input:checked+.slider {
+      background-color: #2196F3;
+    }
 
-  /* Rounded sliders */
-  .slider.round {
-  border-radius: 34px;
-  }
+    input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
 
-  .slider.round:before {
-  border-radius: 50%;
-  }
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: rgb(204, 51, 0);
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-      }
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
 
-      #myBtn:hover {
-        background-color: rgb(200,255,0);
-      }
-      table {
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
 
-        padding: 60px;
-      }
+    .slider.round:before {
+      border-radius: 50%;
+    }
 
-      #name {
-        text-align: center;
-        font-family: fixed, monospace;
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(204, 51, 0);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: rgb(200, 255, 0);
+    }
+
+    table {
+
+      padding: 60px;
+    }
+
+    #name {
+      text-align: center;
+      font-family: fixed, monospace;
 
 
-      }
-      #address{
-        text-align:right;
-        font-family:arsenal;
-        font-size:18px;
-      }
-      #intro, #intrests, #education, #skills, #projects {
-        text-align:left;
-        font-size: 1em;
-        font-family:monospace;
-        color: rgb(255,153,51);
-        width:200px;
-      }
-      body {
-        padding: 25px;
-        background-color: white;
-        color: black;
-        font-size: 21px;
-      }
+    }
 
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
+    #address {
+      text-align: right;
+      font-family: arsenal;
+      font-size: 18px;
+    }
 
-      }
-/* solid border */
+    #intro,
+    #intrests,
+    #education,
+    #skills,
+    #projects {
+      text-align: left;
+      font-size: 1em;
+      font-family: monospace;
+      color: rgb(255, 153, 51);
+      width: 200px;
+    }
 
-}
-    </style>
-  </head>
-  <body>
-<span style="font-size:28px">&#9788</span>
-    <label class="switch";>
-  <input id="toggle" type="checkbox" onclick="clickEvent()">
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 21px;
+    }
 
-  <span class="slider round";></span>
-</label>
-<span style="font-size:25px";> &#9789 </span>
-    <table style= "width:100%";>
-      <tbody>
-        <tr>
-          <td><img style = "align:left"; src="https://live.staticflickr.com/65535/49886683602_eb6f44f9d5_q.jpg" alt="my photo" width="150px">
-</td>
-<td id="name=" style = "font-size:50px";> <strong>Murtala</strong> Baba</td>
-<td id="address" style="color:rgb(255,153,51)">  +2348038152413 <br>mureebaba@gmail.com </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="solid";>
-    <table>
-      <tbody>
-        <tr>
-          <td id="intro"> <strong>Intro</strong>
-</td>
-<td> I consider myself a web programmer. I design beautiful websites and web applications for clients. <br>I am also a photographer.</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="solid";>
-    <table>
-      <tbody>
-        <tr>
-          <td id="intrests";> <strong>Intrests</strong>
-    </td>
-    <td id="area"> Web Design | Programming | Photography </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="solid";>
-    <table>
-      <tbody>
-        <tr>
-          <td id="skills";> <strong> Skills</strong>
-    </td>
-    <td> <img src= "https://live.staticflickr.com/65535/49887100647_be1bca8295_o.jpg" width="100" height="150" alt="js logo"> </td>
-    <td> <img src= "https://live.staticflickr.com/65535/49887100437_8eff378dc6_o.jpg" width="100" height="150" alt="css logo"> </td>
-    <td> <img src= "https://live.staticflickr.com/65535/49886362063_3b5c4c91a8_o.jpg" width="100" height="150" alt="js logo"> </td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="solid" ; >
-    <table style= "width:100%";>
-      <tbody>
-        <tr>
-          <td id="education"> <strong>Education</strong>
-    </td>
-    <td id="area"> <strong>Masters in Bussiness Adminstration </strong><br> <strong>MBA</strong> (Finance) <br> Bayero University, Kano <br><br> <strong>Bachelors Degree in Mech Engineering</strong> <br>Bayero University, Kano</td>
-    <td style=  "text-align:center; color:rgb(134,136,138);"> 2015  -  2017 <br><br><br>2005  -  2011</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr class="solid">
-    <table>
-      <tbody>
-        <tr>
-          <td id="projects"> <strong>Projects</strong>
-    </td>
-    <td> <a href="https://github.com/muree?tab=repositories"> My Web programming Projects </a> </td>
-        </tr>
-      </tbody>
-    </table>
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
 
- <button onclick="topFunction()" id="myBtn" title="Go to top"> Top </button>
+    }
 
-    <script>
+    /* solid border */
+
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size:28px">&#9788</span>
+  <label class="switch" ;>
+    <input id="toggle" type="checkbox" onclick="clickEvent()">
+
+    <span class="slider round" ;></span>
+  </label>
+  <span style="font-size:25px" ;> &#9789 </span>
+  <table style="width:100%" ;>
+    <tbody>
+      <tr>
+        <td><img style="align:left" ; src="https://live.staticflickr.com/65535/49886683602_eb6f44f9d5_q.jpg" alt="my photo" width="150px">
+        </td>
+        <td id="name=" style="font-size:50px" ;> <strong>Murtala</strong> Baba</td>
+        <td id="address" style="color:rgb(255,153,51)"> +2348038152413 <br>mureebaba@gmail.com </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr class="solid" ;>
+  <table>
+    <tbody>
+      <tr>
+        <td id="intro"> <strong>Intro</strong>
+        </td>
+        <td> I consider myself a web programmer. I design beautiful websites and web applications for clients. <br>I am also a photographer.</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr class="solid" ;>
+  <table>
+    <tbody>
+      <tr>
+        <td id="intrests" ;> <strong>Intrests</strong>
+        </td>
+        <td id="area"> Web Design | Programming | Photography </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr class="solid" ;>
+  <table>
+    <tbody>
+      <tr>
+        <td id="skills" ;> <strong> Skills</strong>
+        </td>
+        <td> <img src="https://live.staticflickr.com/65535/49887100647_be1bca8295_o.jpg" width="100" height="150" alt="js logo"> </td>
+        <td> <img src="https://live.staticflickr.com/65535/49887100437_8eff378dc6_o.jpg" width="100" height="150" alt="css logo"> </td>
+        <td> <img src="https://live.staticflickr.com/65535/49886362063_3b5c4c91a8_o.jpg" width="100" height="150" alt="js logo"> </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr class="solid" ;>
+  <table style="width:100%" ;>
+    <tbody>
+      <tr>
+        <td id="education"> <strong>Education</strong>
+        </td>
+        <td id="area"> <strong>Masters in Bussiness Adminstration </strong><br> <strong>MBA</strong> (Finance) <br> Bayero University, Kano <br><br> <strong>Bachelors Degree in Mech Engineering</strong> <br>Bayero University, Kano</td>
+        <td style="text-align:center; color:rgb(134,136,138);"> 2015 - 2017 <br><br><br>2005 - 2011</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr class="solid">
+  <table>
+    <tbody>
+      <tr>
+        <td id="projects"> <strong>Projects</strong>
+        </td>
+        <td> <a href="https://github.com/muree?tab=repositories"> My Web programming Projects </a> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> Top </button>
+
+  <script>
     //scroll up bottom script
     var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {
+      scrollFunction()
+    };
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -218,11 +233,13 @@
     }
     //Dark mode toggle scrip, toggle switch designed in HTML and used javascript to execute a css styling
     document.getElementByid(toggle).onclick = clickEvent;
-    function clickEvent(){
-      var element = document.body;
-  element.classList.toggle("dark-mode")
-    }
-    </script>
 
-  </body>
+    function clickEvent() {
+      var element = document.body;
+      element.classList.toggle("dark-mode")
+    }
+  </script>
+
+</body>
+
 </html>
